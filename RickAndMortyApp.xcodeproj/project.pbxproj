@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		A9697186255F137200C19B4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9697185255F137200C19B4E /* AppDelegate.swift */; };
 		A9697188255F137200C19B4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9697187255F137200C19B4E /* SceneDelegate.swift */; };
-		A969718A255F137200C19B4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9697189255F137200C19B4E /* ViewController.swift */; };
+		A969718A255F137200C19B4E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9697189255F137200C19B4E /* MainViewController.swift */; };
 		A969718D255F137200C19B4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A969718B255F137200C19B4E /* Main.storyboard */; };
 		A969718F255F137700C19B4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A969718E255F137700C19B4E /* Assets.xcassets */; };
 		A9697192255F137700C19B4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9697190255F137700C19B4E /* LaunchScreen.storyboard */; };
+		A96971A4255F232000C19B4E /* CartoonHeroesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96971A3255F232000C19B4E /* CartoonHeroesViewController.swift */; };
+		A96971A7255F237F00C19B4E /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96971A6255F237F00C19B4E /* Hero.swift */; };
+		A96971AA255F372600C19B4E /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96971A9255F372600C19B4E /* HeroCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A9697182255F137200C19B4E /* StarWarsInfoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsInfoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9697182255F137200C19B4E /* RickAndMortyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9697185255F137200C19B4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9697187255F137200C19B4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A9697189255F137200C19B4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9697189255F137200C19B4E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A969718C255F137200C19B4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A969718E255F137700C19B4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9697191255F137700C19B4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9697193255F137700C19B4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A96971A3255F232000C19B4E /* CartoonHeroesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartoonHeroesViewController.swift; sourceTree = "<group>"; };
+		A96971A6255F237F00C19B4E /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		A96971A9255F372600C19B4E /* HeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +54,7 @@
 		A9697183255F137200C19B4E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A9697182255F137200C19B4E /* StarWarsInfoApp.app */,
+				A9697182255F137200C19B4E /* RickAndMortyApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +64,11 @@
 			children = (
 				A9697185255F137200C19B4E /* AppDelegate.swift */,
 				A9697187255F137200C19B4E /* SceneDelegate.swift */,
-				A9697189255F137200C19B4E /* ViewController.swift */,
 				A969718B255F137200C19B4E /* Main.storyboard */,
+				A9697189255F137200C19B4E /* MainViewController.swift */,
+				A96971A3255F232000C19B4E /* CartoonHeroesViewController.swift */,
+				A96971A6255F237F00C19B4E /* Hero.swift */,
+				A96971A9255F372600C19B4E /* HeroCell.swift */,
 				A969718E255F137700C19B4E /* Assets.xcassets */,
 				A9697190255F137700C19B4E /* LaunchScreen.storyboard */,
 				A9697193255F137700C19B4E /* Info.plist */,
@@ -70,9 +79,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A9697181255F137200C19B4E /* StarWarsInfoApp */ = {
+		A9697181255F137200C19B4E /* RickAndMortyApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9697196255F137700C19B4E /* Build configuration list for PBXNativeTarget "StarWarsInfoApp" */;
+			buildConfigurationList = A9697196255F137700C19B4E /* Build configuration list for PBXNativeTarget "RickAndMortyApp" */;
 			buildPhases = (
 				A969717E255F137200C19B4E /* Sources */,
 				A969717F255F137200C19B4E /* Frameworks */,
@@ -82,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = StarWarsInfoApp;
+			name = RickAndMortyApp;
 			productName = StarWarsInfoApp;
-			productReference = A9697182255F137200C19B4E /* StarWarsInfoApp.app */;
+			productReference = A9697182255F137200C19B4E /* RickAndMortyApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +110,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A969717D255F137200C19B4E /* Build configuration list for PBXProject "StarWarsInfoApp" */;
+			buildConfigurationList = A969717D255F137200C19B4E /* Build configuration list for PBXProject "RickAndMortyApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +123,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A9697181255F137200C19B4E /* StarWarsInfoApp */,
+				A9697181255F137200C19B4E /* RickAndMortyApp */,
 			);
 		};
 /* End PBXProject section */
@@ -137,9 +146,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A969718A255F137200C19B4E /* ViewController.swift in Sources */,
+				A969718A255F137200C19B4E /* MainViewController.swift in Sources */,
+				A96971A4255F232000C19B4E /* CartoonHeroesViewController.swift in Sources */,
 				A9697186255F137200C19B4E /* AppDelegate.swift in Sources */,
+				A96971AA255F372600C19B4E /* HeroCell.swift in Sources */,
 				A9697188255F137200C19B4E /* SceneDelegate.swift in Sources */,
+				A96971A7255F237F00C19B4E /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +334,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A969717D255F137200C19B4E /* Build configuration list for PBXProject "StarWarsInfoApp" */ = {
+		A969717D255F137200C19B4E /* Build configuration list for PBXProject "RickAndMortyApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9697194255F137700C19B4E /* Debug */,
@@ -331,7 +343,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9697196255F137700C19B4E /* Build configuration list for PBXNativeTarget "StarWarsInfoApp" */ = {
+		A9697196255F137700C19B4E /* Build configuration list for PBXNativeTarget "RickAndMortyApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9697197255F137700C19B4E /* Debug */,
